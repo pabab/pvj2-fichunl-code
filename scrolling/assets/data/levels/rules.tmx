@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="16" tileheight="16" backgroundcolor="#788278">
+ <tileset firstgid="1" name="tiles_alpha" tilewidth="16" tileheight="16">
+  <image source="../../images/tiles_alpha.png" width="256" height="512"/>
+ </tileset>
+ <layer name="regions" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMMKLRo2AUjALSAAAKBAAD
+  </data>
+ </layer>
+ <layer name="input_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOYGWkkkGjYBSMMAAAFusABw==
+  </data>
+ </layer>
+ <layer name="input_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOYGOkkkGjYBSMMAAAGicACA==
+  </data>
+ </layer>
+ <layer name="input_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCDJCaEZGCg0aBaNghAIARMIAFQ==
+  </data>
+ </layer>
+ <layer name="input_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCDFCaCZGCg0aBaNghAIAS0IAFw==
+  </data>
+ </layer>
+ <layer name="input_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCDNCaGZGCg0aBaNghAIAUcIAGQ==
+  </data>
+ </layer>
+ <layer name="input_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMiDBCaBZGCg0aBaNghAIAWEIAGw==
+  </data>
+ </layer>
+ <layer name="output6_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOYGOkkkGjYBSMMAAAGicACA==
+  </data>
+ </layer>
+ <layer name="output5_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOYGWkkkGjYBSMMAAAFusABw==
+  </data>
+ </layer>
+ <layer name="output4_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMiDBCaBZGCg0aBaNghAIAWEIAGw==
+  </data>
+ </layer>
+ <layer name="output3_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCDNCaGZGCg0aBaNghAIAUcIAGQ==
+  </data>
+ </layer>
+ <layer name="output2_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCDFCaCZGCg0aBaNghAIAS0IAFw==
+  </data>
+ </layer>
+ <layer name="output1_solid" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCDJCaEZGCg0aBaNghAIARMIAFQ==
+  </data>
+ </layer>
+</map>
