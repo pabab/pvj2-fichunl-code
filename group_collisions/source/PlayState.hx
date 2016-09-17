@@ -64,7 +64,8 @@ class PlayState extends FlxState
 			theChar.hit();
 		}
 		else if(Type.getClass(theObject) == Coin){
-			theObject.kill();
+			var theCoin = cast(theObject, Coin);
+			theCoin.pick();
 		}
 	}
 

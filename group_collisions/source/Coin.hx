@@ -16,4 +16,9 @@ class Coin extends FlxSprite
     x += offset.x;
     y += 4;
   }
+
+  public function pick():Void
+  {
+      kill();
+  }
 }

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="16" tileheight="16" backgroundcolor="#788278">
- <tileset firstgid="1" name="tiles_alpha" tilewidth="16" tileheight="16">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="16" tileheight="16" backgroundcolor="#788278" nextobjectid="1">
+ <tileset firstgid="1" name="tiles_alpha" tilewidth="16" tileheight="16" tilecount="512" columns="16">
   <image source="../../images/tiles_alpha.png" width="256" height="512"/>
  </tileset>
  <layer name="solid" width="20" height="15">
-  <data encoding="base64" compression="zlib">
-   eJydVNEOxCAIG+r5Drv//9bbEpo0DWbnSIiIQgHBYcdhF7eLP8ktuefeSIdztrnlQbqZtrf8vdhzPWkfpI/iHvwAj+/uklM8nTDeEuyRcxVTLHCc6qA+Z/rUM5xb1kFx2gIH76k28BeLOCp9ZGzt5RtU+HjfKt9d8oxtLPLVu9p7GgPqZ3/0Cuy1v5mC5oKx0A+7NT1pPnl+MDtPNVBymt8h/4BJrap5ddGhX/ifgL9JGF1k/k+gm2T3A8u+CBk=
-  </data>
+  <data encoding="csv">
+260,257,258,261,261,258,258,259,261,257,258,258,261,258,257,258,261,257,260,257,
+258,262,259,258,276,273,276,275,276,273,274,273,276,274,276,273,276,275,258,262,
+261,258,273,276,274,0,0,0,0,0,0,0,0,0,0,0,0,273,259,258,
+259,276,275,0,0,0,0,0,0,0,0,0,0,0,0,0,0,276,275,260,
+257,274,0,0,0,0,274,276,275,0,0,0,273,275,276,0,0,0,276,262,
+260,276,0,0,0,0,276,257,273,0,0,0,274,258,275,0,0,0,273,261,
+261,273,0,0,0,0,276,274,276,0,0,0,276,274,276,0,0,0,274,260,
+258,274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,276,262,
+261,276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,273,258,
+260,273,0,0,0,0,0,0,0,273,273,276,274,276,276,0,0,0,273,261,
+257,275,0,0,0,0,0,0,0,276,276,275,276,273,274,0,0,0,274,262,
+259,276,0,0,273,275,274,0,0,0,0,0,0,0,0,0,0,0,275,259,
+261,274,276,273,275,258,273,0,0,0,0,0,0,0,0,0,0,0,273,257,
+258,260,261,258,258,257,276,274,276,274,276,273,276,275,273,276,273,276,274,260,
+257,258,261,258,258,262,260,261,259,260,261,259,261,257,260,261,259,262,258,262
+</data>
  </layer>
 </map>
