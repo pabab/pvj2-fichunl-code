@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="16" tileheight="16" backgroundcolor="#788278" nextobjectid="1">
+ <tileset firstgid="1" name="tiles_alpha" tilewidth="16" tileheight="16" tilecount="512" columns="16">
+  <image source="../../images/tiles_alpha.png" width="256" height="512"/>
+ </tileset>
+ <layer name="solid" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyVVNsOwyAILer6LvrD6358mnDSM4KLJSEiyB0schwyMA18GSbDbHchHuSsM+lCvNN0J90HVjsb3ZX4GryDHfjjt0+hUjyZfDyFy3Sgj5w5prfR6vx85I4FdWDolm8JZJCL1YHtqeUV+UE/68Keki/orfhqsaXNHlyLN+wH/Y3y3QXON1mMnO+UAwE1mD2fL+onG7MCfT/fbE9pL7qLpT2Ya9S10X7y/mB3op7/g0r7W+T3HxBXq2hfq+NhXvifgL2TfGRH838C3kl6X9+PEFQ=
+  </data>
+ </layer>
+</map>
