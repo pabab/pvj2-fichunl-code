@@ -17,9 +17,9 @@ class PlayState extends FlxState
 		var tiledMap = new TiledMap("assets/data/levels/level01.tmx");
 		var layer = cast(tiledMap.getLayer("solid"), TiledTileLayer);
 		level.loadMapFromArray(layer.tileArray, layer.width, layer.height, "assets/images/tiles_alpha.png", 16, 16, FlxTilemapAutoTiling.OFF, 1);
-		char = TilemapHelper.createSingleObjectFromTile(level, [385], Character, ["x", "y"]);
-		enemies = TilemapHelper.createGroupFromTiles(level, [386], Enemy, ["x", "y"]);
-		coins = TilemapHelper.createGroupFromTiles(level, [387], Coin, ["x", "y"]);
+		char = TilemapHelper.createSingleObjectFromTile(level, [CHAR_TILE], Character, ["x", "y"]);
+		enemies = TilemapHelper.createGroupFromTiles(level, [ENEMY_TILE], Enemy, ["x", "y"]);
+		coins = TilemapHelper.createGroupFromTiles(level, [COIN_TILE], Coin, ["x", "y"]);
 		characterCollideables = new FlxGroup();
 		add(level);
 		add(coins);
@@ -35,6 +35,10 @@ class PlayState extends FlxState
 		super.update(elapsed);
 		FlxG.overlap(characterCollideables, char, onCollisionWithChar);
 		FlxG.collide(level, enemies);
+		if(FlxG.keys.justPressed.R)
+		{
+			FlxG.resetState();
+		}
 	}
 
 	private function onCollisionWithChar(theObject: FlxObject, theChar: Character)
@@ -57,4 +61,7 @@ class PlayState extends FlxState
 	private var enemies: FlxTypedGroup<Enemy>;
 	private var coins: FlxTypedGroup<Coin>;
 	private var characterCollideables: FlxGroup;
+	private static inline var CHAR_TILE = 385;
+	private static inline var ENEMY_TILE = 386;
+	private static inline var COIN_TILE = 387;
 }
