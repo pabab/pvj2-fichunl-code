@@ -2,7 +2,22 @@ import flixel.FlxBasic;
 import flixel.group.FlxGroup;
 import flixel.tile.FlxTilemap;
 
+/**
+ * Helper class to create objects from specific tiles in a tilemap
+ */
 class TilemapHelper{
+	/**
+	 * Creates FlxTypedGroup<T> from tiles with values in `tiles`
+	 *
+	 * @param	tilemap			The tilemap 	
+	 * @param	tiles			Tile values where the objects will be created
+	 * @param	objectClass		Class of the objects that will be created
+	 * @param	args			Array of arguments that will be passed to the object's constructor 
+	 *							"x" will be replaced by tile x coordinate
+	 *							"y" will be replaced by tile y coordinate
+	 *							"tile" will be replaced by the tile value (usefull when creating objects from the same clase using multiple tile values)
+	 * @param	deleteTile		If the tiles must be deleted from the map after creating the object
+	 */
     @:generic
     public static function createGroupFromTiles<T: FlxBasic>(tilemap: FlxTilemap, tiles: Array<Int>, objectClass:Class<T>, args: Array<Dynamic>, deleteTile: Bool = true): FlxTypedGroup<T>{
         var tileWidth: Int = Std.int(tilemap.width/tilemap.widthInTiles);
@@ -26,6 +41,19 @@ class TilemapHelper{
         return group;
     }
 
+
+	/**
+	 * Creates a single object at the location of the first tile with value in `tiles`
+	 *
+	 * @param	tilemap			The tilemap 	
+	 * @param	tiles			Tile values where the objects will be created
+	 * @param	objectClass		Class of the objects that will be created
+	 * @param	args			Array of arguments that will be passed to the object's constructor 
+	 *							"x" will be replaced by tile x coordinate
+	 *							"y" will be replaced by tile y coordinate
+	 *							"tile" will be replaced by the tile value (usefull when creating objects from the same clase using multiple tile values)
+	 * @param	deleteTile		If the tiles must be deleted from the map after creating the object
+	 */
     @:generic
     public static function createSingleObjectFromTile<T: FlxBasic>(tilemap: FlxTilemap, tiles: Array<Int>, objectClass:Class<T>, args: Array<Dynamic>, deleteTile: Bool = true): T {
         var tileWidth: Int = Std.int(tilemap.width/tilemap.widthInTiles);
